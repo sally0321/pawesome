@@ -1,0 +1,249 @@
+body{
+  background-color: #FFFDFA;
+  margin: 0px;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+/*-------------------------------------------*/
+/*Header*/
+header{
+  background-color: #FFFFFF;
+  box-shadow: 0px 3px 10px -7px #333333;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0%;
+  left: 0%;
+  z-index: 998;
+  width: 100%;
+}
+
+.empty{
+  flex-grow: 0.5;
+  flex-shrink: 2;
+}
+
+/*Website logo and Name*/
+#logo_header{
+  width: 3rem;
+  margin: 0.5rem 1rem;
+}
+
+#websiteName_header{
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+}
+
+#websiteName_header p{
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  margin: 0rem 1rem 0rem 0rem;
+}
+
+/*Navigation*/
+#user_header{
+  width: 1.875rem;
+}
+
+#nav_header{
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  align-items: stretch;
+  align-self: flex-end;
+  margin: 0rem 1rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 600px;
+  flex-wrap: wrap;
+}
+
+#nav_header div{
+  display: flex;
+  align-items: center;
+}
+
+#nav_header button{
+  min-width: min-content;
+  font-weight: 600;
+  padding: 0;
+  margin: 0rem 0.6rem;
+  font-family: Helvetica, Arial sans-serif;
+  font-size: 1rem;
+  background-color: #ffffff;
+  border: none;
+  min-height: 100%;
+  border-bottom: 0.2rem solid #FFFFFF;
+}
+
+#nav_header button:hover{
+  border-bottom: 0.2rem solid #53C4C7;
+  cursor: pointer;
+  transition: 0.05s;
+}
+
+#dropdown{
+  position: relative;
+}
+
+#dropdownContent{
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  align-items: flex-start;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 999;
+  text-align: left;
+  box-shadow: 0px 3px 10px -7px #333333 ;
+  min-width: 12rem;
+}
+
+#dropdownContent a{
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#dropdown:hover #dropdownContent{
+  visibility: visible;
+}
+
+#dropdownContent a:hover{
+  cursor: pointer;
+  background-color: #d8edee;
+}
+
+/*-------------------------------------------*/
+/*Footer*/
+footer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #FFFFFF;
+  background-color: #333333;
+  width: 100%;
+}
+
+/*Contact information*/
+#contact_footer{
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+  flex-shrink: 0;
+  margin: 0.5rem 0rem;
+}
+
+#websiteName_footer img{
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+#websiteName_footer{
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#contact_footer div{
+  padding: 0.3rem;
+}
+
+#contact_footer a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#contact_footer a:hover{
+  color: #53c4c7;
+}
+
+/*Sitemap*/
+#sitemap_footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+  flex-shrink: 0;
+  padding: 0.3rem;
+}
+
+#sitemap_footer p{
+  margin: 0;
+}
+
+#copyright_footer{
+  font-size: 0.7rem;
+  font-style: italic;
+  padding: 0.5rem;
+}
+
+#sitemapLinks_footer{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+#sitemapColumn1_footer p{
+  border-right: 1px solid #FFFFFF;
+  padding-right: 1rem;
+}
+
+#sitemapColumn2_footer p{
+  padding-left: 1rem;
+}
+
+.middleSitemap_footer{
+  padding: 0.3rem;
+}
+
+.firstSitemap_footer{
+  padding-bottom: 0.3rem;
+}
+
+.lastSitemap_footer{
+  padding-top: 0.3rem;
+}
+
+#sitemap_footer p:hover{
+  cursor: pointer;
+  color: #53c4c7;
+}
+
+/*Social Media Accounts*/
+#socialMedia_footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.3rem;
+  margin: 0.5rem 0rem;
+}
+
+#socialMedia_footer div{
+  padding: 0.3rem;
+}
+
+#socialMediaIcons_footer img{
+  width: 2rem;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+#socialMediaIcons_footer img:hover{
+  cursor: pointer;
+  opacity: 0.85;
+}
+
